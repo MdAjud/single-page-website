@@ -1,0 +1,654 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.container {
+    height: 100%;
+    width: 100%;
+    background: #1d1d1d;
+}
+
+nav img {
+    height: 50px;
+    margin: 0 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ccc;
+    align-items: center;
+    letter-spacing: 1px;
+    width: 100%;
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+
+}
+
+nav ul li {
+    margin: 0 10px;
+
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-weight: 500;
+    display: inline-block;
+
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #1d1d1d;
+    background: #fff;
+}
+
+.container button {
+    padding: 10px;
+    background-color: #409FEB;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 18px;
+    margin: 0 75px;
+}
+
+
+main .content {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #e2f0e9;
+}
+
+.right {
+    height: 100%;
+    width: 50%;
+
+    font-weight: 700;
+    padding: 100px;
+}
+
+.right h1 {
+    font-size: 2.5rem;
+}
+
+.right h1 span {
+    font-weight: 700;
+    color: #03b1fc;
+}
+
+.right p {
+    padding-top: 20px;
+}
+
+.right img {
+    padding: 10px;
+}
+
+.right form {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.right form input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-left: 10px;
+
+}
+
+.btn-send {
+    border: none;
+    outline: none;
+    padding: 10px 5px;
+    width: 80px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    background: #0078FF;
+    color: #fff;
+    cursor: pointer;
+}
+
+.content .left {
+    height: 100%;
+    width: 50%;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.left img {
+    width: 400px;
+    height: 500px;
+    background-size: cover;
+    margin-left: 100px;
+}
+
+.group {
+    height: 200px;
+    width: 100px;
+    margin-top: 400px;
+    margin-right: -100px;
+}
+
+.group img {
+    height: 50%;
+    height: 50%;
+    margin-right: -50px;
+}
+
+.card-sec {
+    height: 100vh;
+    width: 100%;
+    padding-top: 50px;
+    margin-top: 20px;
+    background: #D5DCE4;
+    text-align: center;
+
+}
+
+.card-sec h3 {
+    color: #8DB52D;
+}
+
+.card-sec h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.card-sec h1 span {
+    color: #2572CE;
+}
+
+.sec {
+    padding: 5px;
+    width: 20%;
+    height: 35%;
+    margin-top: 50px;
+    margin-left: 150px;
+    background: #fff;
+    float: left;
+    justify-content: space-around;
+    border-radius: 15px;
+}
+
+.sec img {
+    width: 50px;
+}
+
+.about {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.about-left {
+    width: 50%;
+    height: 100%;
+    padding: 60px;
+}
+
+.about-left h3 {
+    padding: 30px 0;
+    color: #8DB52D;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.about-left h1 {
+    padding: 40px 0;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.about-left h1 span {
+    color: #03b1fc;
+}
+
+.about-right {
+    width: 50%;
+    height: 100%;
+}
+
+.about-right img {
+    margin-top: 40px;
+    width: 100%;
+    background: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-about {
+    margin: 40px 0;
+    padding: 10px;
+    background: #41A1EC;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+}
+
+.meet {
+    height: 100%;
+    width: 100%;
+    background: #ccc;
+    text-align: center;
+
+}
+
+.meet h1 {
+    padding: 10px 0;
+}
+
+.meet h1 span {
+    color: #8DB52D;
+}
+
+.meet p {
+    padding-bottom: 40px;
+}
+
+.meet-card {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.section {
+    display: flex;
+    height: 80%;
+    width: 20%;
+    margin: 10px 5px;
+    position: relative;
+
+}
+
+.section img {
+    width: 100%;
+    height: 80%;
+}
+
+.card-text {
+    width: 250px;
+    background: #fff;
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 1;
+    border-radius: 10px;
+}
+
+.card-text h1 {
+    color: #2E89E2;
+}
+
+.marketing {
+    margin-top: 100px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.marketing h1 {
+    font-size: 40px;
+    padding-top: 50px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.marketing h1 span {
+    color: #2572CE;
+}
+
+.marketing h1 strong {
+    color: #8DB52D;
+}
+
+.market-part {
+    display: flex;
+    width: 80%;
+    height: 127px;
+    flex-wrap: wrap;
+    margin: auto;
+    flex-basis: 50%;
+    justify-content: space-between;
+}
+
+.market-sec {
+    background: #D5DCE4;
+    height: 100%;
+    width: 45%;
+    margin-top: 20px;
+    border-radius: 23px;
+    justify-content: space-between;
+}
+
+.market-sec h3 {
+    background: #8DB52D;
+    border-radius: 6px;
+    margin-top: -120px;
+    margin-left: 200px;
+    width: 45%;
+    padding: 0 20px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.market-sec p {
+    padding: 10px 0 0 200px;
+}
+
+.market-sec button {
+    margin: 10px 0 0 200px;
+    border: none;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+
+}
+
+.market-sec img {
+    width: 180px;
+    margin: 0px 0;
+}
+
+footer {
+    margin-top: 500px;
+    background: #000;
+    color: #fff;
+
+}
+
+footer hr {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+.footer-container {
+    display: flex;
+    line-height: 40px;
+    justify-content: space-between;
+    height: 40px;
+    width: 80%;
+    margin: auto;
+
+}
+
+.footer-container button {
+    margin-left: -600px;
+    padding: 0 15px;
+    background: #41A1EC;
+    color: #fff;
+    border-radius: 12px;
+    margin-top: 5px;
+    border: none;
+}
+
+.footer-right {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+    /* text-align: justify; */
+}
+
+.socila-icon{
+    font-size: 20px;
+    margin: 150px -9px -13px -12px;
+    display: flex;
+}
+
+.fa-brands{
+    margin-top: -15px;
+    margin-left: -83px;
+}
+
+.box {
+    padding: 0 60px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.box ul {
+    margin: 0;
+    padding: 0;
+    width: 129px;
+}
+
+.box ul li {
+    list-style: none;
+    padding: 10px 0px;
+}
+
+.box ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.copy-right {
+    text-align: center;
+    padding: 20px 0;
+    border-top: solid 1px #DDF0FC;
+    width: 50%;
+    margin: auto;
+}
+
+/* media query */
+
+
+@media (max-width: 940px) {
+
+    nav ul {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    nav ul li {
+        margin: 40px 0;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+
+    nav button {
+        position: absolute;
+        top: 380px;
+        left: 30%;
+        background: #111;
+        height: 15vh;
+        width: 15%;
+        display: block;
+        text-align: center;
+    }
+
+    main {
+        background: none;
+        overflow: hidden;
+        overflow: scroll;
+    }
+
+    .group {
+        margin-top: 66px;
+    }
+
+    .content {
+        flex-direction: column;
+        top: 380px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+        background-color: azure;
+        display: block;
+    }
+
+    .left {
+        width: 100%;
+        height: 50%;
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+    .left img {
+        width: 375px;
+        height: 295px;
+        background-size: cover;
+        gap: 0px;
+        opacity: 0px;
+        margin-top: -280px;
+    }
+
+    .right {
+        width: 100%;
+        height: 50%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .card-sec {
+        flex-direction: column;
+        width: 100%;
+        height: 1000px;
+        margin-top: 298px;
+        background: #D5DCE4;
+    }
+
+    .sec {
+        width: 53%;
+        flex-direction: column;
+        height: 185px;
+    }
+
+    .about {
+        width: 100%;
+        flex-direction: column;
+        margin: 230px auto;
+    }
+    .about-left{
+        margin: -200px auto;
+    }
+    .about-left h3{
+        padding: 0px;
+        margin: auto;
+    }
+    .about-right {
+        margin: 80px auto;
+    }
+
+    .meet {
+        width: 100%;
+        /* position: fixed; */
+        flex-direction: column;
+        margin-top: 360px;
+    }
+
+    .meet-card {
+        width: 100%;
+        margin: auto;
+        flex-direction: column;
+    }
+    .section{
+        height: 85%;
+        width: 35%;
+        margin: auto;
+    }
+
+    .section img{
+        margin: 34px 0;
+    }
+
+    .card-text{
+        bottom: 0px;
+    }
+    .marketing {
+        width: 100%;
+        margin-top: 0px;
+
+    }
+
+    .market-part {
+        width: 100%;
+        height: 130px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .market-sec {
+        width: 56%;
+        margin: 15px 120px;
+        flex-direction: column;
+    }
+
+    /* footer area */
+
+    footer {
+        width: 100%;
+        overflow: hidden;
+        margin-top: 0px;
+    }
+
+    .footer-container {
+        width: 100%;
+    }
+    .fa-brands {
+        margin-top: -120px;
+        margin-left: 62px;
+        height: 25px;
+    }
+    .footer-container button {
+        margin-left: -20px;
+    }
+
+    .footer-right {
+        flex-direction: column;
+    }
+
+    .box {
+        margin: 25px auto;
+    }
+    .box ul li{
+        list-style: none;
+    }
+    .box ul li a{
+        text-decoration: none;
+    }
+
+}
